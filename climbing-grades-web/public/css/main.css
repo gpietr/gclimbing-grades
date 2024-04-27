@@ -1,0 +1,29 @@
+.grades-table td {
+    background-color: inherit;
+    color: inherit;
+    font-weight: bolder;
+}
+
+.grades-table th {
+    background-color: #adfb54;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-tabs li a {
+    padding: 10px 45px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    color: black;
+}
+
+.nav-tabs li a:hover{
+    background-color: #f5f5f5;
+    text-decoration: none;
+}
+
+.nav-tabs li.active a {
+    background-color: #cdf9be;
+    font-weight: bold;
+}
