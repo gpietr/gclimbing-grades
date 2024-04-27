@@ -91,6 +91,8 @@
      [:th "YDS"]
      [:th "French"]
      [:th "UIAA"]
+     [:th "Kurtyki (Polish)"]
+     [:th "British-tech"]
      [:th "Fontainebleau"]
      [:th "V"]]]
    [:tbody
@@ -100,6 +102,8 @@
               [:td yosemite-grade]
               [:td (get (get grades-mapping yosemite-grade) :French)]
               [:td (get (get grades-mapping yosemite-grade) :UIAA)]
+              [:td (get (get grades-mapping yosemite-grade) :Kurtyki)]
+              [:td (get (get grades-mapping yosemite-grade) :British-Tech)]
               [:td (get (get grades-mapping yosemite-grade) :FB-Grade)]
               [:td (get (get grades-mapping yosemite-grade) :V-Grade)]]))
          yosemite-grades)]])
@@ -111,14 +115,19 @@
      [:th "YDS"]
      [:th "French"]
      [:th "UIAA"]
-     ]]
+     [:th "Kurtyki (Polish)"]
+     [:th "British-tech"]
+     ]] 
    [:tbody
     (map (fn [yosemite-grade]
            (let [grade-index (get yosemite-grades-to-index yosemite-grade)]
              [:tr {:key yosemite-grade :style {:background-color (background-color-scale grade-index) :color (font-color-scale grade-index)}}
               [:td yosemite-grade]
               [:td (get (get grades-mapping yosemite-grade) :French)]
-              [:td (get (get grades-mapping yosemite-grade) :UIAA)]]))
+              [:td (get (get grades-mapping yosemite-grade) :UIAA)]
+              [:td (get (get grades-mapping yosemite-grade) :Kurtyki)]
+              [:td (get (get grades-mapping yosemite-grade) :British-Tech)]
+              ]))
          yosemite-grades)]])
 
 (defn render-bouldering-grades-table []
@@ -154,14 +163,14 @@
     [:ul
      (render-nav-item "Bouldering" (:bouldering-grades tabs))
      (render-nav-item "Sport" (:sport-grades tabs))
-     (render-nav-item "All" (:all-grades tabs))
-     ]]
+     (render-nav-item "All" (:all-grades tabs))]]
+     
    [:div {:role "tabs"}
     (case @current-tab
       ((:bouldering-grades tabs)) (render-bouldering-grades-table)
       ((:sport-grades tabs)) (render-sport-grades-table)
-      ((:all-grades tabs)) (render-all-grades-table))
-    ]])
+      ((:all-grades tabs)) (render-all-grades-table))]])
+    
    
 
 (defn init []
