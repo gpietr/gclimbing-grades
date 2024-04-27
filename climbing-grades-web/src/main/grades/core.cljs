@@ -1,5 +1,7 @@
 (ns grades.core
-  (:require [reagent.dom :as r] [reagent.core :as rcore]))
+  (:require [clojure.string :as str]
+            [reagent.core :as rcore]
+            [reagent.dom :as r]))
 
 (defn ^:dev/after-load start []
   (js/console.log "start"))
@@ -63,7 +65,6 @@
 
     (apply str "#" (map (fn [x] (-> x (Math/round) (.toString 16) (.padStart 2 "0"))) color))))
    
-
 (defn font-color-scale [n]
   (let [ratio (/ n 36.0)]
 
@@ -151,10 +152,14 @@
 
 (def current-tab (rcore/atom (:bouldering-grades tabs)))
 
+(defn fully-qualified-name-to-key-string [fqn]
+  (-> fqn
+       (str/split "/")
+       (last)))
+
 (defn render-nav-item [tab-name tab-id]
-  (js/console.log tab-id)
-  (js/console.log @current-tab)
-  [:li {:class (if (= @current-tab tab-id) "active" "")} [:a { :href "#" :onClick (fn [] (swap! current-tab (fn [_] tab-id)))} tab-name]])
+  [:li {:class (str (fully-qualified-name-to-key-string tab-id) (if (= @current-tab tab-id) " active" ""))} 
+   [:a { :href "#" :onClick (fn [] (swap! current-tab (fn [_] tab-id)))} tab-name]])
 
 (defn render []
   [:div
