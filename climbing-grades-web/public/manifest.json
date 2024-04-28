@@ -2,15 +2,15 @@
     "name": "GClimbing Grades",
     "short_name": "GClimbingGrades",
     "scope": "/",
-    "start_url": "/index.html",
+    "start_url": "index.html",
     "icons": [
       {
-        "src": "/image/icon256.png",
+        "src": "image/icon256.png",
         "sizes": "256x256",
         "type": "image/png"
       },
       {
-        "src": "/image/icon512.png",
+        "src": "image/icon512.png",
         "sizes": "512x512",
         "type": "image/png"
       }

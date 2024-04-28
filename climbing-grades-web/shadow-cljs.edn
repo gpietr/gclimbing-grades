@@ -16,5 +16,6 @@
             :asset-path "/js"
             :modules {
                       :main {:init-fn grades.core/init}
-                      }}}}
+                      }
+            :compiler-options {:optimizations :simple}}}}
             
