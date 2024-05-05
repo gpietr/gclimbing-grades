@@ -1,0 +1,37 @@
+﻿Grade,UIAA,French,Sax-Swiss,British-Tech,British-Adj,Nordic-Fin,Nordic-Swe/Nor,Kurtyki,Australian
+5.0,I,1,I,1,M,1,1,I,10
+5.1,II,2,II,2,M/D,2,2,II,11
+5.2,III,3,III,3,D,2/3,2/3,II+,12
+5.3,IV,4,IV,4a,D/VD,3,3,IV,13
+5.4,IV+,4+,IV/V,4a,VD,4,4,IV+,14
+5.5,V-,5a,V,4a/4b,S,5-,5-,V-,15
+5.6,V,5a,VI,4b,HS,5,5,V,16
+5.7,V+,5b,VI/VIIa,4c,HS/VS,5/5+,5/5+,V+,17
+5.8,VI-,5b,VIIa,4c/5a,VS,5+,5+,V+/VI-,18
+5.9,VI,5c,VIIb,5a,HVS,5+/6-,6-,VI-,19
+5.10a,VI+,6a,VIIc,5a /5b,E1,6-,6-/6,VI-,20
+5.10b,VII-,6a+,VIIIa,5b,E1/E2,6-/6,6,VI+,21
+5.10c,VII,6b,VIIIb,5b /5c,E2,6,6+,VI.1,22
+5.10d,VII+,6b+,VIIIc,5c,E2/E3,6/6+,7-,VI.1+,23
+5.11a,VII+/VIII-,6c,VIIIc/IXa,5c,E3,6+,7-/7,VI.2,24
+5.11b,VIII-,6c+,IXa,5c/6a,E3/E4,6+/7-,7,VI.2+,25
+5.11c,VIII,7a,IXb,6a,E4,7-,7+,VI.2+/VI.3,26
+5.11d,VIII+,7a+,IXc,6a,E4/E5,7,7+/8-,VI.3,26
+5.12a,VIII+/IX-,7b,Ixc/Xa,6a/6b,E5,7+,8-,VI.3+,26
+5.12b,IX-,7b+,Xa,6b,E5/E6,8-,8-/8,VI.4,27
+5.12c,IX,7c,Xb,6b / 6c,E6,8,8,VI.4+,28
+5.12d,IX+,7c+,Xc,6c,E6/E7,8+,8/8+,VI.4+/VI.5,29
+5.13a,IX+/X-,8a,Xc,6c,E7,9-,8+,VI.5,29
+5.13b,X-,8a/8a+,Xc/XIa,6c/7a,E7/E8,9,9-,VI.5+,30
+5.13c,X-,8a+,XIa,7a,E8,9+,9-,VI.4+/VI.6,30
+5.13d,X,8b,XIb,7a,E9,10-,9,VI.6,31
+5.14a,X+,8b+,XIc,7a/7b,E9/E10,10,9/9+,VI.6+,32
+5.14b,X+/XI-,8c,XIc/XIIa,7b,E10,10+,9+,VI.7,33
+5.14c,XI-,8c+,XIIa,7b,E11,11-,9+,VI.7+,34
+5.14d,XI,9a,XIIb,7b,E11,11,> 9+,VI.8,35
+5.14d/5.15a,XI,9a/9a+,XIIb,> 7b,> E11,11 /11+,> 9+,VI.8+,35
+5.15a,XI+,9a+,XIIb/XIIc,> 7b,> E11,11+,> 9+,VI.8+,36
+5.15a/5.15b,XI+,9a+/9b,XIIc,> 7b,> E11,> 11+,> 9+,VI.9(?),36
+5.15b,XII-,9b,XIIc,> 7b,> E11,> 11+,> 9+,VI.9(?),37
+5.15c,XII,9b+,> XIIc,> 7b,> E11,> 11+,> 9+,VI.9(?),38
+5.15d,XII+,9c,> XIIc,> 7b,> E11,> 11+,> 9+,VI.9(?),39
