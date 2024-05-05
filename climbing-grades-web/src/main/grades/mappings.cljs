@@ -58,3 +58,39 @@
                                 "V15" {:FB-Grade "8c"}
                                 "V16" {:FB-Grade "8c+"}
                                 "V17" {:FB-Grade "9a"}))
+
+(def mixed-grades-descriptions [{:grade "M1"  :description "Feels like 5.5 climbing."}
+                                {:grade "M2"  :description "Feels like 5.6 climbing."}
+                                {:grade "M3"  :description "Feels like 5.7 climbing."}
+                                {:grade "M4"  :description "Feels like 5.8 climbing."}
+                                {:grade "M5"  :description "Feels like 5.9 climbing; using the blades of ice axes in cracks to torque and dry-hook is useful."}
+                                {:grade "M6"  :description "Feels like 5.9+ climbing; using the blades of ice axes in cracks to torque and dry-hook is mandatory."}
+                                {:grade "M7"  :description "Feels like 5.10 climbing; using ice axes and crampons in such a way as to make the climb impossible without them. Usually somewhat overhanging."}
+                                {:grade "M8"  :description "Feels like 5.11 climbing; using ice axes and crampons in such a way as to make the climb impossible without them. Involves overhanging and sustained climbing."}
+                                {:grade "M9"  :description "Feels like 5.11+ climbing, using ice axes and crampons in such a way as to make the climb impossible without them. Involves severely sustained and extremely overhanging climbing."}
+                                {:grade "M10" :description "Feels like 5.12 climbing"}
+                                {:grade "M11" :description "Feels like 5.12+ climbing"}
+                                {:grade "M12" :description "Feels like 5.13 climbing"}
+                                {:grade "M13" :description "Feels like 5.13+ climbing"}
+                                {:grade "M14" :description "Feels like  5.14 climbing"}
+                                {:grade "M15" :description "Feels like 5.14+ climbing"}
+                                {:grade "M16" :description "Feels like 5.15 climbing"}])
+
+
+(def ice-grades-descriptions [{:grade "WI 1" :description "Easy, low-angled ice. Walking up ice where crampons are necessary. The easiest ice for which a belay rope would be used. A basic level of technical expertise for safety is required. General angle: 50 degrees."}
+                              {:grade "WI 2" :description "Moderate, low-angled water ice with short bulges. Good protection and anchors. Front-points of the crampons may or may not be required. General angle: 60 degrees."}
+                              {:grade "WI 3" :description "Steeper water ice, with longer bulges. Some continuous front pointing but with good resting places between. Generally good protection, screws can be placed from comfortable stances. The ice is usually of good quality. Requires adeptness at placing protection and making belays. General angle: 70 degrees."}
+                              {:grade "WI 4" :description "Sustained climbing with some vertical sections, separated by good belays. The ice may have some technical features like chandeliers but generally the quality of ice is good and offers secure protection and belays. Usually demands that screws be placed while on vertical or near vertical ice. General angle: 80 degrees."}
+                              {:grade "WI 5" :description "A long, steep, strenuous, columnar pitch of ice. Sustained difficulties with little opportunity to rest. Expertise in dealing with the different ice formations is required (e.g., chandeliers, cauliflowers, candled sections). Adequate protection requires effort to place. The climb may sometimes be run-out above protection. Belays may be difficult to create and/or hanging. General angle: 90 degrees."}
+                              {:grade "WI 6" :description "A serious lead on severe and/or thin ice. Long vertical and/or overhanging sections, extremely sustained difficulties. Few, if any, resting sites. Ice may not be of the best quality, often thin, chandeliered and hard to protect. Expert technique and a powerful, positive mind frame are prerequisites. Hanging belays of dubious quality may be required. General angle: 90+ degrees."}
+                              {:grade "WI 7" :description "Ice that is very thin, long, overhanging or very technical. Free-hanging columns of dubious adhesion. This grade requires creative techniques to climb and to find protection. Protection may be non-existent. A very physical and emotional pitch. Total commitment is required. Belays require a very high level of expertise, and may be marginal at best. This grade applies to only a handful of routes led by an even fewer number of world class climbers. WI 7 is the outer space of ice climbing. General angle: 90++ degrees."}])
+
+(def aid-grades-descriptions [{:grade "A1"  :description "Easy aid. No risk of a piece pulling out"}
+                              {:grade "A2"  :description "Moderate aid. Solid gear that's more difficult to place"}
+                              {:grade "A2+" :description  "10-meter fall potential from tenuous placements, but without danger"}
+                              {:grade "A3"  :description "Hard aid. Many tenuous placements in a row, 15-meter fall potential, could require several hours for a single pitch"}
+                              {:grade "A3+" :description  "A3 with dangerous fall potential"}
+                              {:grade "A4"  :description "Serious aid. 30-meter ledge-fall potential from continuously tenuous gear"}
+                              {:grade "A4+" :description  "Even more serious, with even greater fall potential, where each pitch could take many hours to lead"}
+                              {:grade "A5"  :description "Extreme aid. Nothing on the entire pitch can be trusted to hold a fall"}
+                              {:grade "A6"  :description "A5 climbing with belay anchors that won't hold a fall either"}])

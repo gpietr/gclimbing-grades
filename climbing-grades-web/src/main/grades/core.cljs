@@ -1,14 +1,15 @@
 (ns grades.core
   (:require [clojure.string :as str]
-            [grades.mappings :refer [bouldering-grades-mapping
+            [grades.mappings :refer [aid-grades-descriptions
+                                     bouldering-grades-mapping
+                                     ice-grades-descriptions
+                                     mixed-grades-descriptions
                                      sport-grades-mapping]]
             [reagent.core :as rcore]
             [reagent.dom :as r]))
 
 (defn ^:dev/after-load start []
   (js/console.log "start"))
-
-
 
 
 (defn background-color-scale [n max]
@@ -56,6 +57,50 @@
    [:button {:type "submit"} "Submit"]])
    
 
+(defn render-mixed-grades-table []
+  [:table {:class "grades-table"}
+   [:thead
+    [:tr
+     [:th "Grade"]
+     [:th "Description"] 
+     ]]
+    [:tbody
+     (map (fn [grade]
+            [:tr {:key (get grade :grade)}
+             [:td (get grade :grade)]
+             [:td (get grade :description)]
+             ])
+          mixed-grades-descriptions)
+     ]
+   ]
+  )
+
+(defn render-ice-grades-table []
+  [:table {:class "grades-table"}
+   [:thead
+    [:tr
+     [:th "Grade"]
+     [:th "Description"]]]
+   [:tbody
+    (map (fn [grade]
+           [:tr {:key (get grade :grade)}
+            [:td (get grade :grade)]
+            [:td (get grade :description)]])
+         ice-grades-descriptions)]])
+
+(defn render-aid-grades-table []
+  [:table {:class "grades-table"}
+   [:thead
+    [:tr
+     [:th "Grade"]
+     [:th "Description"]]]
+   [:tbody
+    (map (fn [grade]
+           [:tr {:key (get grade :grade)}
+            [:td (get grade :grade)]
+            [:td (get grade :description)]])
+         aid-grades-descriptions)]])
+
 (defn render-sport-grades-table []
   [:table {:class "grades-table"}
    [:thead
@@ -97,7 +142,10 @@
 (def tabs {
            :bouldering-grades ::bouldering-grades 
            :sport-grades ::sport-grades 
-           :all-grades ::all-grades})
+           :mixed-grades ::mixed-grades
+           :aid-grades ::aid-grades
+           :ice-grades ::ice-grades
+           })
 
 (def current-tab (rcore/atom (:bouldering-grades tabs)))
 
@@ -117,15 +165,19 @@
     [:ul
      (render-nav-item "Bouldering" (:bouldering-grades tabs))
      (render-nav-item "Sport" (:sport-grades tabs))
+     (render-nav-item "Mixed" (:mixed-grades tabs))
+     (render-nav-item "Ice" (:ice-grades tabs))
+     (render-nav-item "Aid" (:aid-grades tabs))
      ]]
      
    [:div {:role "tabs"}
     (case @current-tab
       ((:bouldering-grades tabs)) (render-bouldering-grades-table)
       ((:sport-grades tabs)) (render-sport-grades-table)
+      ((:ice-grades tabs)) (render-ice-grades-table)
+      ((:mixed-grades tabs)) (render-mixed-grades-table)
+      ((:aid-grades tabs)) (render-aid-grades-table)
       )]])
-    
-   
 
 (defn init []
   (start)
