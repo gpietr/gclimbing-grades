@@ -10,7 +10,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '20'
       - name: Install dependencies
         run: |
           cd climbing-grades-web
@@ -19,3 +19,8 @@ jobs:
         run: |
           cd climbing-grades-web
           npx shadow-cljs release frontend
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: prod
+          path: climbing-grades-web/public
