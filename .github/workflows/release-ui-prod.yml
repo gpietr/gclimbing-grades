@@ -11,3 +11,11 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
+      - name: Install dependencies
+        run: |
+          cd climbing-grades-web
+          npm install shadow-cljs
+      - name: Build
+        run: |
+          cd climbing-grades-web
+          npx shadow-cljs release frontend
