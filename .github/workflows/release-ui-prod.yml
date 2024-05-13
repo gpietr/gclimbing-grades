@@ -35,3 +35,4 @@ jobs:
         with:
           path: 'climbing-grades-web/public'
           destination: '${{ secrets.GOOGLE_BUCKET_NAME }}'
+          parent: false
