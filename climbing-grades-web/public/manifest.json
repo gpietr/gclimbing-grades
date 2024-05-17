@@ -1,6 +1,6 @@
 {
-    "name": "GClimbing Grades",
-    "short_name": "GClimbingGrades",
+    "name": "Climbing Grades Converter",
+    "short_name": "ClimbingGradesConverter",
     "scope": "/",
     "start_url": "index.html",
     "icons": [
