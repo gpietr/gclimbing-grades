@@ -8,7 +8,7 @@ var urlsToCache = [
     'manifest.json',
     'js/main.js',
     'css/main.css',
-    'css/pico/pico.min.css',
+    'css/pico/css/pico.min.css',
 ];
 
 
