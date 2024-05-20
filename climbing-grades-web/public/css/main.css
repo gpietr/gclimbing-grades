@@ -12,6 +12,10 @@
     font-weight: bold;
 }
 
+.grades-description-table td {
+    font-size: 30px;
+}
+
 .nav-tabs li a {
     padding: 10px 45px;
     border: solid 1px #ccc;

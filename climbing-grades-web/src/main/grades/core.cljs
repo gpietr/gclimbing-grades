@@ -50,15 +50,8 @@
 
 (def v-grades-to-index (zipmap v-grades (range)))
 
-(defn render-enter-grade-form [] 
-  [
-   :form {:class "grid"}
-   [:input {:type "text" :id "grade" :name "grade"}]
-   [:button {:type "submit"} "Submit"]])
-   
-
 (defn render-mixed-grades-table []
-  [:table {:class "grades-table"}
+  [:table {:class "grades-table grades-description-table"}
    [:thead
     [:tr
      [:th "Grade"]
@@ -76,7 +69,7 @@
   )
 
 (defn render-ice-grades-table []
-  [:table {:class "grades-table"}
+  [:table {:class "grades-table grades-description-table"}
    [:thead
     [:tr
      [:th "Grade"]
@@ -89,7 +82,7 @@
          ice-grades-descriptions)]])
 
 (defn render-aid-grades-table []
-  [:table {:class "grades-table"}
+  [:table {:class "grades-table grades-description-table"}
    [:thead
     [:tr
      [:th "Grade"]
