@@ -130,7 +130,7 @@
    [:thead
     [:tr
      [:th "Fontainebleau"]
-     [:th "V"]]]
+     [:th "V-grade"]]]
    [:tbody
     (map (fn [v-grade]
            (let [grade-index (get v-grades-to-index v-grade)]
