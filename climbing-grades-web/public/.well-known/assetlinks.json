@@ -1,0 +1,10 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.hackomic.climbinggradesconverter.twa",
+      "sha256_cert_fingerprints": [
+        "68:91:62:C0:A0:FA:07:C2:14:02:02:E4:D2:C7:D6:1B:39:D0:42:4D:C2:9B:B2:5B:AE:1F:0C:6A:1D:B0:27:EC"
+      ]
+    }
+   }]
